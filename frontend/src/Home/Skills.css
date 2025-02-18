@@ -1,0 +1,188 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.skill{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+#heading1{
+    text-align: center;
+    color:white;
+    margin-top: 15px;
+}
+
+
+.frontend{
+    display: flex;
+    flex-direction:row;
+    justify-content:  space-evenly;
+    align-items: center;
+    height: 240px;
+    width:90%;
+    border:2px solid aqua;
+    box-shadow: 0px 0px 10px aquamarine;
+    
+}
+
+@media(max-width:700px) {
+    .frontend {
+        display: flex;
+       flex-direction:column;
+       height:auto;
+       width:80%;
+      
+     }
+     .box{
+        margin-bottom:15px ;
+     }
+
+
+ }
+
+.box{
+   display:flex;
+   flex-direction: column;
+    align-items: center; 
+    text-align: center;
+    border:2px solid aquamarine;
+box-shadow: 0px 0px 10px aquamarine;
+    color:aqua;
+}
+
+.bar{
+    height:10px;
+    width:110px;
+    background-color: aqua;
+    border-radius: 25px;
+}
+
+
+
+
+.box1{
+    display:flex;
+    height: 128px;
+    width:128px;
+    background-image: url("../Assest/HTML5photo.png");
+    background-size: cover;
+   background-color:white;
+}
+
+.box2{
+    display:flex;
+    height: 128px;
+    width:128px;
+    background-image: url("../Assest/cssphoto.png");
+    background-size: cover;
+   background-color:white;
+}
+
+.box3{
+    display:flex;
+    height: 128px;
+    width:128px;
+    background-image: url("../Assest/javascriptphoto2.png");
+    background-size: contain;
+   background-color:white;
+}
+
+.box4{
+    display:flex;
+    height: 128px;
+    width:128px;
+    background-image: url("../Assest/reactphoto.png");
+    background-size: cover;
+   background-color:white;
+}
+
+.box5{
+    display:flex;
+    height: 128px;
+    width:128px;
+    background-image: url("../Assest/nodejsphoto1.png");
+    background-size: contain;
+   background-color:white;
+}
+
+.box6{
+    display:flex;
+    height: 128px;
+    width:128px;
+    background-image: url("../Assest/expressjsphoto1.png");
+    background-size: contain;
+   background-color:white;
+}
+
+.box7{
+    display:flex;
+    height: 128px;
+    width:128px;
+    background-image: url("../Assest/sqlphoto1.png");
+    background-size: cover;
+   background-color:white;
+}
+
+.box8{
+    display:flex;
+    height: 128px;
+    width:128px;
+    background-image: url("../Assest/mongodbphoto1.png");
+    background-size: contain;
+   background-color:white;
+    
+}
+
+.box9{
+    display:flex;
+    height: 128px;
+    width:128px;
+    background-image: url("../Assest/gitphoto.png");
+    background-size: cover;
+   background-color:white;
+}
+
+.box10{
+    display:flex;
+    height: 128px;
+    width:128px;
+    background-image: url("../Assest/githubphoto.png");
+    background-size: cover;
+   background-color:white;
+   
+}
+
+.box11{
+    display:flex;
+    height: 128px;
+    width:128px;
+    background-image: url("../Assest/materialUIphoto.jpg");
+    background-size: cover;
+   background-color:white;
+}
+
+.box12{
+    display:flex;
+    height: 128px;
+    width:128px;
+    background-image: url("../Assest/tailwindcssphoto.jpeg");
+    background-size: cover;
+   background-color:white;
+}
+
+.box13{
+    display:flex;
+    height: 128px;
+    width:128px;
+    background-image: url("../Assest/bootstrapphoto.png");
+    background-size: cover;
+   background-color:white;
+}
+
+
+
+

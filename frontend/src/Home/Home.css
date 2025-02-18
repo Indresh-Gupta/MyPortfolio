@@ -1,0 +1,115 @@
+.home{
+    text-align: justify;
+    display:flex;
+    flex-direction: row;
+     justify-content:space-around;
+     align-items:center;
+    height:720px;
+    background-color:#464d5c;
+}
+
+
+
+.home-content{
+    display:flex;
+    flex-direction: column;
+    width:50%; 
+   color:white;
+    font-size: 20px;
+    margin-bottom: 80px;
+   
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.btn1{
+    height:40px;
+    background-color:  #50717b;
+    color:white;
+    width: 180px;
+    border-radius: 25px;
+    font-size: 1rem;
+   margin-right: 20px; 
+   margin-top:20px;
+   text-decoration: none;
+   border:none ;
+    
+}
+
+#btn2{
+    height:40px;
+    width:170px;
+    border-radius: 25px;
+    background-color: #50717b;
+    font-size:1rem;
+    color:white;
+    border:none;
+    margin-top: 20px;
+}
+
+
+.icon{
+    display: flex;
+   margin-right: 80px;
+    margin-top: 32px;
+}
+
+a{
+   
+    margin-left: 32px;
+}
+
+#img{
+    display: fixed;
+    background-image: url("../Assest/leetcodeimage.png ");
+    background-size: cover;
+    border:2px solid rgb(81, 81, 186);
+    background-color: rgb(73, 73, 227);
+    height: 15px;
+    width: 15px;
+}
+
+#img1{
+    display: fixed;
+    background-image:url("../Assest/Gfgimage.png") ;
+    background-size: cover;
+    border:2px solid rgb(81, 81, 186);
+    background-color: rgb(73, 73, 227);
+    height: 15px;
+    width: 15px;
+}
+
+@media(max-width:600px){
+    .home{
+        flex-direction: column;
+        width:100%;
+    }
+
+ .info{
+    display: flex;
+    flex-direction: column;
+ }
+
+ #btn2{
+    margin-right: 52px;
+ }
+    
+    .home-content{
+       margin-top: 50px;
+       width:80%;
+    }
+
+.icon{
+    margin-left:3px;
+   align-items: center;
+    justify-content: center;
+}
+
+
+}

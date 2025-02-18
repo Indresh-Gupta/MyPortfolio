@@ -1,0 +1,49 @@
+
+
+
+.about{
+    text-align: justify;
+    height:720px;
+    /* background-color:rgb(182, 202, 48); */
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items:center;
+}
+
+
+.about-content{
+    display:flex;
+    flex-direction: column;
+    line-height: normal;
+    width:50%; 
+   color:white;
+    font-size: 20px;
+    
+}
+
+.photo{
+    display:flex;
+    height:288px;
+    width:288px;  
+    background-color:white;
+    background-image: url("../Assest/Indresh_photo.jpg");
+    background-size: cover;
+    border-radius: 50%;
+
+}
+
+@media(max-width:600px){
+    .about{
+        flex-direction: column;
+      
+
+        
+    }
+    .photo{
+        display: none;   
+    }
+    .about-content{
+        width:80%;
+    }
+}
