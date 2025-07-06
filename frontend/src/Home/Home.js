@@ -5,7 +5,11 @@ import { NavLink} from "react-router-dom";
 
 
 function Home() {
-    const phrases = ["Full Stack Developer", "Programming Enthusiast", "Tech Explorer"];
+   const phrases = [
+  "Full Stack\n Developer",
+  "Programming\n Enthusiast",
+  "Tech Explorer"
+];
   const [text, setText] = useState('');
   const [index, setIndex] = useState(0); // Current phrase index
   const [charIndex, setCharIndex] = useState(0); // Current character index
@@ -13,6 +17,20 @@ function Home() {
   const typingSpeed = 100;
   const deletingSpeed = 50;
   const delayBetweenPhrases = 1500;
+
+  const [isMobile, setIsMobile] = useState(false);
+
+useEffect(() => {
+  const handleResize = () => {
+    setIsMobile(window.innerWidth <= 600); // adjust breakpoint as needed
+  };
+
+  handleResize(); // set initially
+  window.addEventListener("resize", handleResize);
+
+  return () => window.removeEventListener("resize", handleResize);
+}, []);
+
 
   useEffect(() => {
     const currentPhrase = phrases[index];
@@ -48,11 +66,25 @@ function Home() {
         <div className="home-content">
        <h3>Hello, It's me</h3>
        <h1>Indresh Gupta</h1>
-       <h3>and I'm a</h3>
-<div className="typewriter-container">
-  <span className="typewriter-text">{text}</span>
-  <span className="typewriter-cursor">|</span>
+       <div className="typewriter-wrapper">
+  <h3 className="intro-line">and I'm a</h3>
+  <div className="typewriter-container">
+   <span className="typewriter-text">
+  {isMobile
+    ? text.split('\n').map((line, i) => (
+        <React.Fragment key={i}>
+          {line}
+          <br />
+        </React.Fragment>
+      ))
+    : text.replace(/\n/g, '')  // ❌ remove line breaks on desktop
+  }
+</span>
+
+    {/* <span className="typewriter-cursor">|</span> */}
+  </div>
 </div>
+
 
        <p>I'm a Full Stack Developer with expertise in frontend and backend <br/>development, REST APIs, and creating user-friendly web applications.<br/> Eager to contribute innovative solutions as a fresher.</p>
        <div className="info">

@@ -15,49 +15,54 @@
     flex-direction: column;
     width:50%; 
    color:white;
-    font-size: 20px;
+    font-size: 25px;
     margin-bottom: 80px;
+   
    
 }
 
+
+
+/* Heading */
+.intro-line {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Default: Desktop - No wrapping */
 .typewriter-container {
+  display: inline-block;
   font-family: 'Courier New', monospace;
   font-size: 2rem;
   font-weight: bold;
-   display: block; 
-  white-space: normal;
+  white-space: nowrap;          /* ❌ Don't wrap on desktop */
   overflow: hidden;
+  text-overflow: ellipsis;
   max-width: 100%;
-  word-break: break-word;
 }
 
-
-.typewriter-text {
-  color: #0ef;
-}
-
+/* Blinking cursor */
 .typewriter-cursor {
   display: inline-block;
   width: 2px;
-  /* background-color: #333; */
   margin-left: 4px;
   animation: blink 1s step-end infinite;
 }
 
-@keyframes blink {
-  0%, 100% {
-    opacity: 1;
+/* ✅ On mobile: allow line break */
+@media (max-width: 600px) {
+  .typewriter-container {
+    white-space: normal;          /* ✅ Wrap on mobile */
+    word-break: break-word;
+    overflow-wrap: break-word;
+    font-size: 1.3rem;            /* Optional: adjust size */
   }
-  50% {
-    opacity: 0;
+
+  .intro-line {
+    font-size: 1.3rem;
   }
 }
 
-@media (max-width: 600px) {
-  .typewriter-container {
-    font-size: 1.4rem;
-  }
-}
 
 
 .info{
