@@ -2,7 +2,7 @@ import React from "react";
 import "./Project.css";
 function Project() {
    const handleOpenVideo1 = () => {
-  //   window.open("/video/WanderlustVideo.mp4", "_blank"); // Opens video in a new tab
+    window.open("https://drive.google.com/file/d/17wmUrmWaZpHEkJcblsKmS1ask1MXsQYk/view?usp=drive_link", "_blank"); // Opens video in a new tab
    };
 
     return (

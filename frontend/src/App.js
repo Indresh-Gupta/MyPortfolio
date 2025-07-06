@@ -4,9 +4,7 @@ import Home from "./Home/Home.js";
 function App() {
   return (
     <div className="all-page">
-      <Navbar/>
-      
-     
+      <Navbar/> 
     </div>
   );
 }

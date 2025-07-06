@@ -5,6 +5,7 @@
 
 .skill{
     display:flex;
+    
     flex-direction:column;
     justify-content:center;
     align-items:center;
@@ -133,8 +134,7 @@ box-shadow: 0px 0px 10px aquamarine;
     width:128px;
     background-image: url("../Assest/mongodbphoto1.png");
     background-size: contain;
-   background-color:white;
-    
+   background-color:white;    
 }
 
 .box9{
@@ -152,8 +152,7 @@ box-shadow: 0px 0px 10px aquamarine;
     width:128px;
     background-image: url("../Assest/githubphoto.png");
     background-size: cover;
-   background-color:white;
-   
+   background-color:white;  
 }
 
 .box11{

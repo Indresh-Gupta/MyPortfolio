@@ -12,7 +12,7 @@ export default function Navbar() {
 
   const toggleSidebar = () => {
    
-    setIsOpen(true);
+    setIsOpen(!isOpen);
   };
 
   return (
@@ -29,12 +29,12 @@ export default function Navbar() {
             <NavLink to="/contact" className="content1">Contact</NavLink>
           </div>
           <button onClick={toggleSidebar} className="toggle-btn">
-            {isOpen ? <i className="fa-solid fa-xmark"></i> : <i className="fa-solid fa-bars"></i>}
+            {isOpen ? <i className="fa-solid fa-xmark"></i> : <i className="fa-solid fa-bars" ></i>}
           </button>
         </div>
 
-        {/* Sidebar */}
-        <div className={`sidebar ${isOpen ? "open" : "closed"}`}>
+       
+        <div className={`sidebar ${isOpen ? "open" : "closed"}`} >
           <div className="content5">
             <NavLink to="/" className="nav-item" onClick={() => setIsOpen(false)} >Home</NavLink>
             <NavLink to="/about" className="nav-item" onClick={() => setIsOpen(false)}>About</NavLink>
@@ -53,7 +53,7 @@ export default function Navbar() {
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
-      {/* </div> */}
+     
     </>
   );
 }

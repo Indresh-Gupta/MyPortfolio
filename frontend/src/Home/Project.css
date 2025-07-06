@@ -20,6 +20,7 @@
     align-items: flex-start;
     width:80%;
     border:1px solid aqua;
+    /* border-radius: 10%; */
     box-shadow: 0px 0px 10px aquamarine;
     margin-top: 48px;
     color:white;
@@ -113,7 +114,7 @@ h1,p{
     width:120px;
     border-radius: 25px;
     font-size:20px;
-    background-color: #50717b;
+    background-color: aqua;
     box-shadow: 0px 0px 3px aqua; 
     color:white;
     margin-top:10px;

@@ -42,7 +42,6 @@ label{
     #in3{
      margin-right:4px;
     }
-   
   }
 
 #in4{
@@ -56,7 +55,7 @@ label{
     height:40px;
     width:130px;
     border-radius: 25px;
-    background-color: #50717b;
+    background-color: aqua;
     font-size:16px;
     color:white;
     border:none;

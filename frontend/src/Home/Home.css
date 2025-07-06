@@ -5,7 +5,7 @@
      justify-content:space-around;
      align-items:center;
     height:720px;
-    background-color:#464d5c;
+    /* background-color:#464d5c; */
 }
 
 
@@ -20,69 +20,124 @@
    
 }
 
+.typewriter-container {
+  font-family: 'Courier New', monospace;
+  font-size: 2rem;
+  font-weight: bold;
+   display: block; 
+  white-space: normal;
+  overflow: hidden;
+  max-width: 100%;
+  word-break: break-word;
+}
+
+
+.typewriter-text {
+  color: #0ef;
+}
+
+.typewriter-cursor {
+  display: inline-block;
+  width: 2px;
+  /* background-color: #333; */
+  margin-left: 4px;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .typewriter-container {
+    font-size: 1.4rem;
+  }
+}
+
+
 .info{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    
 }
 
 
 .btn1{
     height:40px;
-    background-color:  #50717b;
+    background-color: aqua;
     color:white;
-    width: 180px;
+    width: 170px;
     border-radius: 25px;
     font-size: 1rem;
-   margin-right: 20px; 
    margin-top:20px;
    text-decoration: none;
-   border:none ;
-    
+   border:none ; 
+    box-shadow: 0px 0px 10px aquamarine;
 }
 
 #btn2{
     height:40px;
     width:170px;
     border-radius: 25px;
-    background-color: #50717b;
+    background-color:aqua;
+      margin-left: 20px;  
     font-size:1rem;
     color:white;
     border:none;
     margin-top: 20px;
+     box-shadow: 0px 0px 10px aquamarine;
 }
 
 
 .icon{
     display: flex;
-   margin-right: 80px;
-    margin-top: 32px;
+   /* margin-right: 10px;  */
+     margin-top: 32px;
 }
 
-a{
-   
+.icon a{
+    display:inline-flex;
+    justify-content: center;
+    align-items:center;
+    height:40px;
+    width:40px;
+    background-color: #0ef;
+   background:transparent;
+    border:2px solid #0ef;
+    border-radius: 50%;
+    font-size:20px;
+    color:#0ef;
+    text-decoration:none;
     margin-left: 32px;
 }
+
+
 
 #img{
     display: fixed;
     background-image: url("../Assest/leetcodeimage.png ");
     background-size: cover;
-    border:2px solid rgb(81, 81, 186);
-    background-color: rgb(73, 73, 227);
-    height: 15px;
-    width: 15px;
+    border:2px solid #0ef;
+    background-color: #0ef;
+    height: 40px;
+    width: 40px;
 }
 
 #img1{
     display: fixed;
     background-image:url("../Assest/Gfgimage.png") ;
     background-size: cover;
-    border:2px solid rgb(81, 81, 186);
-    background-color: rgb(73, 73, 227);
-    height: 15px;
-    width: 15px;
+    border:2px solid #0ef;
+    background-color: #0ef;
+    height: 40px;
+    width: 40px;
 }
 
 @media(max-width:600px){
@@ -97,7 +152,16 @@ a{
  }
 
  #btn2{
-    margin-right: 52px;
+    margin-right: 20px;
+ }
+
+ #img1{
+    height:40px;
+    width:40px;
+ }
+ #img{
+    height:40px;
+    width:40px;
  }
     
     .home-content{
@@ -105,11 +169,9 @@ a{
        width:80%;
     }
 
-.icon{
+/* .icon{
     margin-left:3px;
    align-items: center;
     justify-content: center;
-}
-
-
+} */
 }
