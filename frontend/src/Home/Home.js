@@ -89,7 +89,7 @@ useEffect(() => {
        <p>I'm a Full Stack Developer with expertise in frontend and backend <br/>development, REST APIs, and creating user-friendly web applications.<br/> Eager to contribute innovative solutions as a fresher.</p>
        <div className="info">
         <button className="btn1"><NavLink to="/about" className="btn1">More about me</NavLink></button>
-        <a href="/resume.pdf" download="resume.pdf">
+        <a href="/Indresh Resume.pdf" download="Indresh Resume.pdf">
         <button id="btn2">Download Resume</button>
         </a>
        </div>
